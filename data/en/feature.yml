@@ -1,0 +1,19 @@
+############################# feature ###################################
+feature:
+  enable : true
+  image : images/about/about-business-man.jpg
+  image_webp : images/about/about-business-man.webp
+  title : Resources
+  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi."
+  feature_item : 
+      # feature item loop
+    - title : Paper
+      link:
+      icon : ti-file # themify icon pack : https://themify.me/themify-icons
+      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
+      
+      # feature item loop
+    - title : Code
+      link: 
+      icon : ti-harddrive # themify icon pack : https://themify.me/themify-icons
+      content : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe
