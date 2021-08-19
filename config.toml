@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "/"
+baseURL = "https://rb2.info/"
 title = "RB2: Ranking Based Robotics Benchmark"
 theme = "meghna-hugo"
 themesDir = "themes"
