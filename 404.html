@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
-	<title>404 Page not found</title>
+	<title>RB2: Ranking Based Robotics Benchmark</title>
 
 	<!-- mobile responsive meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -30,98 +30,206 @@
 
 	<!-- Custom stylesheet - for your changes -->
 	
-  <link rel="stylesheet" href="https://rb2.info/css/custom.min.css" media="screen">
+  	<link rel="stylesheet" href="https://rb2.info/css/custom.min.css" media="screen">
 
 	<!--Favicon-->
 	<link rel="shortcut icon" href="https://rb2.info/images/favicon.png" type="image/x-icon">
 	<link rel="icon" href="https://rb2.info/images/favicon.png" type="image/x-icon">
 
 	
+	<script src="https://kit.fontawesome.com/5f257fbd16.js" crossorigin="anonymous"></script>
+	
 
 </head>
 
 
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="55">
-  <div id="content">
     
 
-
-<section class="sticky-top navigation">
+<!-- Portfolio Section -->
+<section class="portfolio section" id="portfolio">
 	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand p-0" href="/">
-				
-				RB2: Ranking Based Robotics Benchmark
-				
-			</a>
-
-			<button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navigation">
-				<ul class="navbar-nav ml-auto">
-					
-					<li class="nav-item">
-            <a class="nav-link" 
-						href="/#about">abstract</a>
-					</li>
-					
-					<li class="nav-item">
-            <a class="nav-link" 
-						href="/#feature">code</a>
-					</li>
-					
-					<li class="nav-item">
-            <a class="nav-link" 
-						href="/#portfolio">objects</a>
-					</li>
-					
-				</ul>
-				
+		<div class="row">
+			<div class="col-xl-12">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2> Global Ranking </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+				<!-- /section title -->
 			</div>
-		</nav>
+		</div>
+		<div class="col-lg-12 text-center">
+			<div class="col-lg-12 text-center">
+				We redefine robotics benchmarks as a joint set of tasks (w/ evaluation function) and prior SOTA baselines. When a new researcher wants to test his/her algorithm, they first create a new local evaluation function which uses same tasks (e.g., pouring) but with different local environment parameters. We use local rankings from several researchers to develop global rankings across different robotics setups. Here are the leaderboards of SOTA methods on each task.
+				<p>Please check <a href="">Colab</a> for local ranking. Automatic global ranking is under construction. Before that, please contact <a href="mailto:sdasari@cs.cmu.edu">Sudeep Dasari</a> for global ranking.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="btn-group portfolio-filter btn-group-toggle justify-content-center d-flex flex-wrap"
+					data-toggle="buttons">
+					<label class="btn active">
+						<input type="radio" name="shuffle-filter" value="pouring" checked="checked" />Pouring
+					</label>
+					<label class="btn">
+						<input type="radio" name="shuffle-filter" value="scooping" />Scooping
+					</label>
+					<label class="btn">
+						<input type="radio" name="shuffle-filter" value="zipping" />Zipping
+					</label>
+					<label class="btn">
+						<input type="radio" name="shuffle-filter" value="insertion" />Insertion
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row shuffle-wrapper justify-content-center">
+			<!-- portfolio item -->
+			
+			<div class="col-lg-6 col-md-6 shuffle-item"
+				data-groups="[&quot;pouring&quot;]">
+				<div class="portfolio-block mb-4">
+					<table>
+						<tr>
+						  <td>Ranking</td>
+						  <td>Method</td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Open</a></td>
+						</tr>
+						<tr>
+						  <td>2</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_ndp.py">NDP</a></td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Closed</a></td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-LSTM</a></td>
+						</tr>
+						<tr>
+						  <td>5</td>
+						  <td><a href="">MOReL</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-6 col-md-6 shuffle-item"
+				data-groups="[&quot;scooping&quot;]">
+				<div class="portfolio-block mb-4">
+					<table>
+						<tr>
+						  <td>Ranking</td>
+						  <td>Method</td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Open</a></td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_ndp.py">NDP</a></td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-LSTM</a></td>
+						</tr>
+						<tr>
+						  <td>4</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Closed</a></td>
+						</tr>
+						<tr>
+						  <td>5</td>
+						  <td><a href="">MOReL</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-md-6 shuffle-item"
+				data-groups="[&quot;zipping&quot;]">
+				<div class="portfolio-block mb-4">
+					<table>
+						<tr>
+						  <td>Ranking</td>
+						  <td>Method</td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Open</a></td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_ndp.py">NDP</a></td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Closed</a></td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-LSTM</a></td>
+						</tr>
+						<tr>
+						  <td>5</td>
+						  <td><a href="">MOReL</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-md-6 shuffle-item"
+				data-groups="[&quot;insertion&quot;]">
+				<div class="portfolio-block mb-4">
+					<table>
+						<tr>
+						  <td>Ranking</td>
+						  <td>Method</td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Open</a></td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_ndp.py">NDP</a></td>
+						</tr>
+						<tr>
+						  <td>1</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-LSTM</a></td>
+						</tr>
+						<tr>
+						  <td>4</td>
+						  <td><a href="https://github.com/AGI-Labs/robot_baselines/blob/master/train_bc.py">BC-Closed</a></td>
+						</tr>
+						<tr>
+						  <td>5</td>
+						  <td><a href="">MOReL</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>	
+		</div>
 	</div>
 </section>
+<!-- /Portfolio -->
 
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-				<a class="btn btn-main" href="/">Back to home</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 
-  </div><!-- end Contact Area -->
+</div><!-- end Contact Area -->
 <footer id="footer" class="section-bg">
 	<div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="500ms">
 			<div class="col-xl-12">
 
-				<!-- Footer Social Links -->
-				<div class="social-icon">
-					<ul class="list-inline">
-						
-						<li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-						
-						<li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
-						
-						<li class="list-inline-item"><a href="#"><i class="ti-youtube"></i></a></li>
-						
-						<li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
-						
-						<li class="list-inline-item"><a href="#"><i class="ti-dribbble"></i></a></li>
-						
-						<li class="list-inline-item"><a href="#"><i class="ti-pinterest"></i></a></li>
-						
-					</ul>
-				</div>
 
 				<!-- copyright -->
 				<div class="copyright text-center">
