@@ -1,0 +1,28 @@
+############################# feature ###################################
+feature:
+  enable : true
+  title : Resources
+  content : Learn more about the how to replicate the RB2 benchmark and contribute to it."
+  feature_item : 
+      # feature item loop
+    - title : Paper
+      link: https://arxiv.org/abs/2203.08098
+      icon : fa-solid fa-file # themify icon pack : https://themify.me/themify-icons
+      content : Available on ArXiV
+      
+      # feature item loop
+    - title : Global Rankings
+      link: https://github.com/SudeepDasari/robot_baselines
+      icon : fa-solid fa-poll # themify icon pack : https://themify.me/themify-icons
+      content : Performance rankings for baseline methods.
+    
+        # feature item loop
+    - title : Baselines
+      link: https://github.com/AGI-Labs/robot_baselines
+      icon : fa-solid fa-code # themify icon pack : https://themify.me/themify-icons
+      content : Implementations for our baseline agents
+    
+    - title : Control Stack
+      link : https://github.com/AGI-Labs/franka_control
+      icon : fa-solid fa-robot
+      content : Control code for Franka robot

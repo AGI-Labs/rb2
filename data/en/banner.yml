@@ -1,0 +1,12 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image : "images/backgrounds/smith-lab.JPG"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "RB2: Ranking Based Robotics Benchmark"
+  content : "Sudeep Dasari, Jianren Wang, Joyce Hong, Shikhar Bahl, Abitha Thankaraj, Karanbir Chahal,
+    Berk Calli, Saurabh Gupta, David Held, Lerrel Pinto, Deepak Pathak, Vikash Kumar, Abhinav Gupta"
+  button:
+    enable : true
+    label : "Learn More"
+    link : "#about"
