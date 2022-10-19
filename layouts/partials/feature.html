@@ -1,0 +1,84 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.feature.feature.enable }}
+{{ with $data.feature.feature }}
+{{"<!-- feature -->" | safeHTML}}
+<section class="section section-bg about-2 padding-0" id="feature">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 padding-0">
+				<!-- this image is for trigger this section fallback background image -->
+				<!-- Carousel -->
+				<div id="carousel-example" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example" data-slide-to="1"></li>
+						<li data-target="#carousel-example" data-slide-to="2"></li>
+						<li data-target="#carousel-example" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item"
+									src="https://drive.google.com/file/d/1QT4K9bRBjHjsM1SZm83-jmyWR5N8pmlh/preview" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item"
+									src="https://drive.google.com/file/d/13W6Ot8eOAdYvSrtWfK9l2rl6erMT-liN/preview" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item"
+									src="https://drive.google.com/file/d/1PSIwuhH-WS2H3D-O7K6mwy7IAyBuTs0m/preview" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item"
+									src="https://drive.google.com/file/d/1T82zThSq70fo4s3434IWNQrNF_1iYH2q/preview" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<!-- End carousel -->
+			</div>
+			<div class="col-lg-6">
+				<div class="content-block">
+					<h2>{{ .title | markdownify }}</h2>
+					<p>{{ .content | markdownify }}</p>
+					<div class="row">
+						{{ range .feature_item }}
+						<div class="col-lg-6">
+							<div class="media">
+								{{with .icon}}
+								<div class="align-self-start mr-3">
+									<i class="{{ . }}"></i>
+								</div>
+								{{ end }}
+								<div class="media-body">
+									<h4><a href="{{ .link | safeURL }}"class="media-heading"target="_blank">{{ .title | markdownify }}</a></h4>
+									<p>{{ .content | markdownify }}</p>
+								</div>
+							</div>
+						</div>
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{"<!-- /feature -->" | safeHTML}}
+{{ end }}
+{{ end }}
