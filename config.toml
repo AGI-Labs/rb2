@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://agi-labs.github.io/rb2/"
+baseURL = "/"
 title = "RB2: Ranking Based Robotics Benchmark"
 theme = "meghna-hugo"
 themesDir = "themes"
